@@ -1,0 +1,59 @@
+﻿.human {
+    position: absolute;
+    width: 24px;
+    height: 20px;
+}
+
+#manchecked {
+    position: absolute;
+    top: 20px;
+    width: 24px;
+    height: 20px;
+    left: 1600px;
+}
+
+.planter {
+    position: absolute;
+    top: 50px;
+    width: 24px;
+    height: 20px;
+    left: 1600px;
+}
+
+.nemesite {
+    position: absolute;
+    width: 24px;
+    height: 20px;
+}
+
+.android {
+    position: absolute;
+    width: 24px;
+    height: 20px;
+}
+
+#nyhme {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+}
+
+.blunderstorm {
+    position: absolute;
+    width: 40px;
+}
+
+.spore {
+    position: absolute;
+    width: 24px;
+}
+
+.trailer {
+    position: absolute;
+    width: 28px;
+}
+
+.antimater {
+    position: absolute;
+    width: 24px;
+}

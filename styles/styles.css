@@ -1,0 +1,293 @@
+﻿@font-face {
+    font-family: 'DesignerPixels';
+    src: url('../fonts/DesignerPixels.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: DesignerPixels;
+    background-color: rgb(248, 67, 8);
+}
+
+#ebuttondv {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#site {
+    width: 960px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#content {
+    width: 664px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#game {
+    width: 100%;
+    height: 426.5px;
+    padding-top: 50px;
+    position: relative;
+}
+
+#kokpit {
+    height: 86px;
+    position: relative;
+}
+
+#kokpit-panel {
+    width: 664px;
+    height: 86px;
+    background-color: black;
+}
+
+#tlo {
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+
+#tlo-poj {
+    height: 340px;
+    width: 4400px;
+    position: absolute;
+    left: 0;
+}
+
+#tlo-screen {
+    height: 340px;
+    position: absolute;
+    left: 0;
+}
+
+.ekr {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: none;
+}
+
+#ekran1 {
+    display: block;
+    background-color: transparent;
+}
+
+#remaining {
+    position: absolute;
+    top: 1px;
+    left: 275px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+#catched {
+    position: absolute;
+    top: 1px;
+    left: 375px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+#humanCount {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#Lstr, #Pstr {
+    position: absolute;
+    left: 315px;
+    top: 3px;
+    display: none;
+}
+
+#Mcount {
+    width: 136px;
+    height: 16px;
+    position: absolute;
+    left: 2096px;
+    top: 284px;
+}
+
+#punkty {
+    width: 50px;
+    height: 18px;
+    position: absolute;
+    left: 12px;
+    top: 4px;
+    color: white;
+}
+
+#multikill {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    left: 550px;
+    top: 30px;
+    font-size: 12px;
+}
+
+#lives {
+    width: 36px;
+    height: 50px;
+    position: absolute;
+    left: 80px;
+    top: 25px;
+}
+
+    #lives img {
+        width: 25px;
+    }
+
+#kamuflarz {
+    color: white;
+    width: 100px;
+    height: 16px;
+    position: absolute;
+    left: 555px;
+    top: 3px;
+    background-color: rgb(117,85,244);
+}
+
+#kampoziom {
+    margin-top: 2px;
+    margin-left: 5px;
+    width: 90px;
+    height: 12px;
+    background-color: yellow;
+}
+
+#ekran3 {
+    height: 426.5px;
+    color: white;
+    background-color: black;
+}
+
+#endtitls {
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    font-size: 25px;
+}
+
+#tlo-zapas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 340px;
+}
+
+.dostarczenie {
+    position: absolute;
+    color: white;
+}
+
+.strzykawki {
+    display: block;
+    width: 26px;
+}
+
+.deadanim {
+    position: absolute;
+}
+
+#dzwieki {
+    position: absolute;
+    left: 30px;
+    top: 500px;
+}
+
+#mapka {
+    background-color: black;
+    width: 416px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 4px rgb(198,94,67) solid;
+    margin-left: 120px;
+    margin-top: 24px;
+}
+
+#Zlewo {
+    background-color: lightpink;
+}
+
+#Zprawo {
+    background-color: blue;
+}
+
+#mmd {
+    color: rgb(224,78,89);
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 156px;
+    margin-top: 2px;
+}
+
+#nvg {
+    color: rgb(117,85,244);
+    display: inline-block;
+}
+
+#bgfdsa {
+    color: rgb(117,85,244);
+    display: inline-block;
+    margin-left: 200px;
+}
+
+#dsds {
+    position: absolute;
+    left: 474px;
+    color: rgb(210,215,60);
+    display: inline-block;
+}
+
+#cv2 {
+    position: absolute;
+    top: 28px;
+    left: 124px;
+}
+
+
+#mapka-src {
+    width: 416px;
+    position: absolute;
+    bottom: 0;
+}
+
+#linia {
+    width: 100%;
+    height: 4px;
+    background-color: pink;
+    position: absolute;
+    background-color: rgb(198,94,67);
+    bottom: 6px;
+}
+
+#intro {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#introdv {
+    width: 100%;
+    height: 426.5px;
+}

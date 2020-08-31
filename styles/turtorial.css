@@ -1,0 +1,67 @@
+﻿
+#turt {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(6, 92, 246,0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: "Myriad Pro";
+    font-size: 1vw;
+    display: none;
+}
+
+#keyborad {
+    width: 40vw;
+    position: absolute;
+    left: 30vw;
+    bottom: 0;
+}
+
+#wytl {
+    position: absolute;
+    width: 20vw;
+    text-align: center;
+    left: 5vw;
+    top: 10vh;
+}
+
+#wytl2 {
+    position: absolute;
+    width: 20vw;
+    text-align: center;
+    left: 5vw;
+    top: 35vh;
+}
+
+    #wytl2 img {
+        width: 4vw;
+    }
+
+#wymagania {
+    position: absolute;
+    width: 20vw;
+    text-align: center;
+    left: 5vw;
+    top: 50vh;
+}
+
+
+    #wymagania img {
+        width: 15vw;
+    }
+
+#enemy {
+    position: absolute;
+    width: 20vw;
+    text-align: center;
+    right: 5vw;
+    top: 10vh;
+}
+
+#iconssr {
+    position: absolute;
+    width: 40vw;
+    left: 30vw;
+    top: 10vh;
+}

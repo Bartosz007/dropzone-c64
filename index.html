@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropzone</title>
+    <meta charset="utf-8" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="gpx/favicon.ico" />
+    <script src="script/data.js"></script>
+    <script src="script/load.js"></script>
+    <script src="script/interwal.js"></script>
+    <script>
+        window.onload = function () {
+            var ig
+            Load.init()
+        }
+    </script>
+    <link href="styles/postacie.css" rel="stylesheet" />
+    <link href="styles/turtorial.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="site">
+        <div id="content">
+            <div id="game">
+                <div id="tlo">
+                    <img src="gpx/background.png" id="tlo-zapas" />
+                    <div id="tlo-poj">
+                        <img src="gpx/background.png" id="tlo-screen" />
+                        <div id="Mcount"></div>
+                    </div>
+                </div>
+                <div id="kokpit">
+                    <div id="humanCount">
+                        <div id="mmd">MEN: <div id="nvg">OUT</div><div id="bgfdsa">IN</div><div id="dsds">CLOAK</div></div>
+                        <div id="remaining"></div>
+                        <div id="catched"></div>
+                        <img id="Lstr" src="gpx/inne/strzalal.png" />
+                        <img id="Pstr" src="gpx/inne/strzalap.png" />
+                        <canvas id="lanchpad"></canvas>
+                    </div>
+                    <div id="kokpit-panel">bla</div>
+                    <div id="zakrycie">
+                        <div id="mapka">
+                            <img src="gpx/minimapka3.png" id="mapka-src" />
+                        </div>
+                        <div id="Zlewo"></div>
+                        <div id="Zprawo"></div>
+                    </div>
+
+                    <div id="punkty">0</div>
+                    <div id="multikill"></div>
+                    <div id="lives">
+                    </div>
+                    <div id="kamuflarz">
+                        <div id="kampoziom"></div>
+                    </div>
+                    <canvas id="cv2" width="414" height="47" style="border: 1px green solid;"></canvas>
+                    <div id="linia"></div>
+                </div>
+
+                <div class="ekr" id="ekran1">
+                    <canvas id="cv1" width="664" height="300" style="border: 1px green solid;"></canvas>
+                </div>
+                <div class="ekr" id="ekran2"></div>
+                <div class="ekr" id="ekran3"><div id="endtitls"> GAME OVER<br> <br>your rank is not listed <br><br>practice recommended </div></div>
+
+                <div id="introdv">
+                    <video id="intro" loop autoplay>
+                        <source src="media/intro.webm" type="video/webm" />
+                    </video>
+                </div>
+            </div>
+            <div id="ebuttondv"><img id="ebutton" src="gpx/turt/ebutton.png" /></div>
+        </div>
+        <div id="dzwieki">
+            <audio id="ladowanie">
+                <source src="media/ladowanie.wav" type="audio/wav" />
+            </audio>
+            <audio id="shoot">
+                <source src="media/strzal.wav" type="audio/wav" />
+            </audio>
+            <audio loop autoplay>
+                <!---->
+                <source src="media/tlo.wav" type="audio/wav" />
+            </audio>
+            <audio id="catch">
+                <source src="media/zlapanie.wav" type="audio/wav" />
+            </audio>
+            <audio id="death">
+                <source src="media/death.wav" type="audio/wav" />
+            </audio>
+
+            <audio id="killall">
+                <source src="media/multikill.wav" type="audio/wav" />
+            </audio>
+        </div>
+
+    </div>
+    <div id="turt">
+        <img id="keyborad" src="gpx/turt/klaiwatura.png" />
+        <div id="wytl">
+            Gra polega na dostarczeniu ludzi do bazy
+            <img src="gpx/turt/baza.png" />
+        </div>
+        <div id="wytl2">
+            oraz wybiciu wszystkich kosmitów(poza jednym gatunkiem)<br>
+            <img src="gpx/postacie/planter.gif" />
+        </div>
+        <div id="wymagania">
+            Aby gra chodziła płynnie przyda się z ~2 GB RAMU z miare znośną kartą graficzną
+            <br>Gra robiona na Mozilli Firefox i Google Chrome, testowana również na Operze
+            <br>Polecam grać na zoomie 125%
+            <br>Czasami obrazki się nie ładują dobrze (nie jest to zależne od kodu), w szeczólgości podczas trubu nieśmiertelności
+            <br>Utowrzyłem safe zone, miałem go usunąć, ale zostawiłem go ze względu na poziom trudności i pewne problemy z nim związane
+        </div>
+        <div id="enemy">
+            Przeciwnicy nie są idealnie odwzorowani, podobnie minimapka, ale lepiej nie udało mi się tego zrobić
+            <br><br>W intrze gry są przedstawieni poszczególni przeciwnicy, ale nie są oni opisani
+            <br><b>Dropship</b> - postać, którą sterujesz
+            <br><b>Man</b> - ludzie, unosi się nad ziemią musisz dostarczyć go do bazy - główny cel gry, postać przyjazna
+            <br><b>Android</b> - unosi się nad ziemią, zabija ludzi i Dropshipa, postać wroga
+            <br><b>Planter</b> - lata, zrzuca androidy, po czym staje się Nemesitem, postać wroga
+            <br><b>Nemesite</b> - lata, jednosta wyjątkowo agresywna, samobójca, lepiej pozostać w ruchu przy nim, wtedy nie podleci, postać wroga, postać wroga
+            <br><b>Blunder Storm</b> - dryfuje, dosyć wolno, występują dwa rodzaje - burza i radioaktywny deszcz, przelot pod nim grozi śmiercią, postać wroga
+            <br><b>Nheye</b> - egzekutor, gry gracz nie wykonuje celów lub gdy robi to zbyt długo, pojawia się on, elitarna, najszybsza jednostka samobojców, postać wroga
+            <br><b>Spore</b> - porusza się tylko pionowo, po zabiciu, wyskakują z niego Trailery, postać wroga
+            <br><b>Trailer</b> - dziwna postać z dziwnym zachowaniem, lepiej być w powietrzy w jego obecności, gdyż na ziemi staje się dużo szybszy
+            <br><b>Anti Matter</b> - jedyna jednostka, której nie musisz zestrzelić, po strzale w nią wybucha zabijając Dropshipa (tej postaci nie udało mi się spotkać w grze, dlatego sam ją wymyśliełem)
+            <br>
+        </div>
+        <img id="iconssr" src="gpx/turt/dropzone.png" />
+    </div>
+</body>
+</html>
